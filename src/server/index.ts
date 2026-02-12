@@ -53,6 +53,11 @@ router.get<
   }
 });
 
+router.post("/api/save-score", async (req, res) => {
+  const { score } = req.body;
+  // Save to Redis, database, etc.
+  res.json({ success: true });
+});
 // Add your game-specific API endpoints here
 // Examples:
 // router.post("/api/save-score", async (req, res) => { ... });

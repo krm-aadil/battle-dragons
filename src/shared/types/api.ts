@@ -4,6 +4,11 @@ export type InitResponse = {
   username: string;
 };
 
+export type SaveScoreRequest = {
+  score: number;
+  level: number;
+};
+
 // Add your game-specific API types here
 // Examples:
 // export type SaveScoreRequest = {
